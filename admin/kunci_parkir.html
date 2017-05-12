@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Admin - Sistem FORKOMLAB</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+     <!-- Kalendar -->
+     <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+     <link rel='stylesheet' href='fullcalendar/lib/cupertino/jquery-ui.min.css' />
+   
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Forkomlab</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Amin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profil</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html"><i class="fa fa-fw fa-home"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="pengumuman.html"><i class="fa fa-fw fa-bullhorn"></i> Pengumuman</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fa fa-fw fa-key"></i> Kunci Parkir</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-desktop"></i> Lab <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#">LP1</a>
+                            </li>
+                            <li>
+                                <a href="#">RPL</a>
+                            </li>
+                            <li>
+                                <a href="#">NCC</a>
+                            </li>
+                            <li>
+                                <a href="#">KCV</a>
+                            </li>
+                            <li>
+                                <a href="#">AJK</a>
+                            </li>
+                            <li>
+                                <a href="#">IGS</a>
+                            </li>
+                            <li>
+                                <a href="#">MDL</a>
+                            </li>
+                            <li>
+                                <a href="#">LP2</a>
+                            </li>
+                            <li>
+                                <a href="#">ALPRO</a>
+                            </li>
+                            <li>
+                                <a href="#">MI</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-user"></i> Admin Lab <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li>
+                                <a href="#">Lihat Data</a>
+                            </li>
+                            <li>
+                                <a href="#">Tambah Data</a>
+                            </li>
+                            <li>
+                                <a href="#">Ubah Data</a>
+                            </li>
+                            <li>
+                                <a href="#">Hapus Data</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo3"><i class="fa fa-user"></i> Anggota Lab <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo3" class="collapse">
+                            <li>
+                                <a href="anggota_lab.html">Lihat Data</a>
+                            </li>
+                            <li>
+                                <a href="#">Tambah Data</a>
+                            </li>
+                            <li>
+                                <a href="#">Ubah Data</a>
+                            </li>
+                            <li>
+                                <a href="#">Hapus Data</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="saran.html"><i class="fa fa-fw fa-file"></i> Saran</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Kunci Parkir 
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-user fa-fw"></i> Peminjaman Kunci</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-lg-4">
+                                    <img class="img-thumbnail" src="http://placehold.it/400x450" alt="" >
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="disabledSelect">Status Peminjaman</label>
+                                        <input class="form-control" id="disabledInput" type="text" placeholder="Dipinjam" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="disabledSelect">Nama</label>
+                                        <input class="form-control" id="disabledInput" type="text" placeholder="Preman TC" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="disabledSelect">NRP</label>
+                                        <input class="form-control" id="disabledInput" type="text" placeholder="5104100001" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="disabledSelect">Jam Ambil Kunci</label>
+                                        <input class="form-control" id="disabledInput" type="text" placeholder="19:59" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="disabledSelect">Jaminan</label>
+                                        <input class="form-control" id="disabledInput" type="text" placeholder="Dompet Teman" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="panel panel-green">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <i class="fa fa-user fa-5x"></i>
+                                                </div>
+                                                <div class="col-xs-9 text-right">
+                                                    <div class="huge">12</div>
+                                                    <div>Peminjam Kunci Parkir</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#selengkapnya_peminjam">
+                                            <div class="panel-footer" data-toggle="modal" data-target="#selengkapnya_peminjam">
+                                                <span class="pull-left">Selengkapnya...</span>
+                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <!-- Modal -->
+                                            <div id="selengkapnya_peminjam" class="modal fade" role="dialog">
+                                              <div class="modal-dialog">
+
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">Peminjam Kunci</h4><small>5 terbaru</small>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                     <table class="table table-bordered table-hover table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Nama</th>
+                                                                <th>NRP</th>
+                                                                <th>Jam Ambil</th>
+                                                                <th>Jaminan</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Jeffry N</td>
+                                                                <td>5114100043</td>
+                                                                <td>20.01</td>
+                                                                <td>HP</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Alek N</td>
+                                                                <td>5114100018</td>
+                                                                <td>19.34</td>
+                                                                <td>Tas</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Hanif A</td>
+                                                                <td>5114100077</td>
+                                                                <td>19.00</td>
+                                                                <td>Kacamata</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Habib R</td>
+                                                                <td>5114100001</td>
+                                                                <td>18.30</td>
+                                                                <td>Dompet</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Mala Tuban</td>
+                                                                <td>5114100100</td>
+                                                                <td>18:00</td>
+                                                                <td>Tas</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                  </div>
+                                                </div>
+
+                                              </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-calendar fa-fw"></i> Jadwal Kunci</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="calendar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+     <!-- Kalender -->
+     <script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/fullcalendar.min.js'></script>
+    <script src='fullcalendar/locale/id.js'></script>
+    <!-- <script src='fullcalendar/lib/jquery.min.js'></script> -->
+
+    <script>
+        $(document).ready(function() {
+            // page is ready
+            $('#calendar').fullCalendar({
+                    locale: 'id',
+                    // enable theme
+                    theme: true,
+                    // emphasizes business hours
+                    businessHours: true,
+                    // event dragging & resizing
+                    editable: true,
+                    // header
+                    header: {
+                      left: 'prev,next today',
+                      center: 'title',
+                      right: 'month,agendaWeek,agendaDay'
+                    },
+                    events: [
+                          // all day event
+                          {
+                            title  : 'Syukuran KCV',
+                            start  : '2017-5-12'
+                          },
+                          {
+                            title  : 'Pemadaman Listrik',
+                            start  : '2017-5-12'
+                          },
+                          // long-term event 
+                          {
+                            title  : 'Syukuran AJK',
+                            start  : '2017-5-23'
+                          },
+                          // short term event 
+                          {
+                            title  : 'TCODE LP1',
+                            start  : '2017-5-14T11:30:00',
+                            end  : '2017-5-14T012:30:00',
+                            allDay : false // will make the time show
+                          }
+                    ]
+            })
+        });
+    </script>
+</body>
+
+</html>
