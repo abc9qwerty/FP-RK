@@ -24,8 +24,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
      <!-- Kalendar -->
-     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.0/fullcalendar.css' />
-     <!-- <link href='css/fullcalendar.css' rel="stylesheet"> -->
+     <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+     <link rel='stylesheet' href='fullcalendar/lib/cupertino/jquery-ui.min.css' />
    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -537,17 +537,50 @@
 
      <!-- Kalender -->
      <script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.0/fullcalendar.min.js'></script>
-    <!-- <script src='js/jquery-1.11.3.min.js'></script>
-    <script src='js/moment.min.js'></script>
-    <script src='js/fullcalendar.min.js'></script> -->
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/fullcalendar.min.js'></script>
+
+    <!-- <script src='fullcalendar/lib/jquery.min.js'></script> -->
 
     <script>
         $(document).ready(function() {
             // page is ready
-            $('#calendar').fullCalendar({
-              // calendar properties
+            $('#calendar').fullCalendar({                   
+                    // enable theme
+                    theme: true,
+                    // emphasizes business hours
+                    businessHours: true,
+                    // event dragging & resizing
+                    editable: true,
+                    // header
+                    header: {
+                      left: 'prev,next today',
+                      center: 'title',
+                      right: 'month,agendaWeek,agendaDay'
+                    },
+                    events: [
+                          // all day event
+                          {
+                            title  : 'Syukuran KCV',
+                            start  : '2017-5-12'
+                          },
+                          {
+                            title  : 'Pemadaman Listrik',
+                            start  : '2017-5-12'
+                          },
+                          // long-term event 
+                          {
+                            title  : 'Syukuran AJK',
+                            start  : '2017-5-23'
+                          },
+                          // short term event 
+                          {
+                            title  : 'TCODE LP1',
+                            start  : '2017-5-14T11:30:00',
+                            end  : '2017-5-14T012:30:00',
+                            allDay : false // will make the time show
+                          }
+                    ]
             })
         });
     </script>
