@@ -539,13 +539,14 @@
      <script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
     <script src='fullcalendar/lib/moment.min.js'></script>
     <script src='fullcalendar/fullcalendar.min.js'></script>
-
+    <script src='fullcalendar/locale/id.js'></script>
     <!-- <script src='fullcalendar/lib/jquery.min.js'></script> -->
 
     <script>
         $(document).ready(function() {
             // page is ready
-            $('#calendar').fullCalendar({                   
+            $('#calendar').fullCalendar({
+                    locale: 'id',
                     // enable theme
                     theme: true,
                     // emphasizes business hours
