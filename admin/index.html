@@ -163,7 +163,7 @@
                         <a href="pengumuman.html"><i class="fa fa-fw fa-bullhorn"></i> Pengumuman</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-key"></i> Kunci Parkir</a>
+                        <a href="kunci_parkir.html"><i class="fa fa-fw fa-key"></i> Kunci Parkir</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-desktop"></i> Lab <i class="fa fa-fw fa-caret-down"></i></a>
@@ -553,6 +553,7 @@
                     businessHours: true,
                     // event dragging & resizing
                     editable: true,
+                    eventLimit: true, // allow "more" link when too many events
                     // header
                     header: {
                       left: 'prev,next today',
@@ -560,25 +561,67 @@
                       right: 'month,agendaWeek,agendaDay'
                     },
                     events: [
-                          // all day event
+                          // all\ day event
                           {
                             title  : 'Syukuran KCV',
-                            start  : '2017-5-12'
+                            start  : '2017-05-12'
                           },
                           {
                             title  : 'Pemadaman Listrik',
-                            start  : '2017-5-12'
+                            start  : '2017-05-12'
                           },
                           // long-term event 
                           {
                             title  : 'Syukuran AJK',
-                            start  : '2017-5-23'
+                            start  : '2017-05-23'
                           },
                           // short term event 
                           {
                             title  : 'TCODE LP1',
-                            start  : '2017-5-14T11:30:00',
-                            end  : '2017-5-14T012:30:00',
+                            start  : '2017-05-14T11:30:00',
+                            end  : '2017-05-14T012:30:00',
+                            allDay : false // will make the time show
+                          },
+                          {
+                            title  : 'TCODE LP1',
+                            start  : '2017-05-14T11:30:00',
+                            end  : '2017-05-14T012:30:00',
+                            allDay : false // will make the time show
+                          },
+                          {
+                            title  : 'GameDev LP2',
+                            start  : '2017-05-14T11:30:00',
+                            end  : '2017-05-14T012:30:00',
+                            allDay : false // will make the time show
+                          },
+                          {
+                            title  : 'Sekjar AJK',
+                            start  : '2017-05-14T11:30:00',
+                            end  : '2017-05-14T012:30:00',
+                            allDay : false // will make the time show
+                          },
+                          {
+                            title  : 'Mobile Training MDL',
+                            start  : '2017-05-14T11:30:00',
+                            end  : '2017-05-14T012:30:00',
+                            allDay : false // will make the time show
+                          },
+                          {
+                            title  : 'Database Training MI',
+                            start  : '2017-05-14T11:30:00',
+                            end  : '2017-05-14T012:30:00',
+                            allDay : false // will make the time show
+                          },
+                          {
+                            title  : 'Jarkom Asistensi NCC',
+                            start  : '2017-05-14T11:30:00',
+                            end  : '2017-05-14T012:30:00',
+                            allDay : false // will make the time show
+                          },
+                          {
+                            title  : 'Syukuran RPL',
+                            start  : '2017-05-14T11:30:00',
+                            end  : '2017-05-14T012:30:00',
                             allDay : false // will make the time show
                           }
                     ]

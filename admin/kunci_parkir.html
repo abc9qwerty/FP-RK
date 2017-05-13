@@ -78,7 +78,7 @@
                         <a href="pengumuman.html"><i class="fa fa-fw fa-bullhorn"></i> Pengumuman</a>
                     </li>
                     <li class="active">
-                        <a href="#"><i class="fa fa-fw fa-key"></i> Kunci Parkir</a>
+                        <a href="kunci_parkir.html"><i class="fa fa-fw fa-key"></i> Kunci Parkir</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-desktop"></i> Lab <i class="fa fa-fw fa-caret-down"></i></a>
@@ -277,7 +277,7 @@
                                                     </table>
                                                   </div>
                                                   <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Simpan</button>
                                                   </div>
                                                 </div>
 
@@ -295,7 +295,44 @@
                             <div class="panel-heading">
                                 <h3 class="panel-title"><i class="fa fa-calendar fa-fw"></i> Jadwal Kunci</h3>
                             </div>
+
                             <div class="panel-body">
+                                <div class="row">
+                                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#ubah_jadwal">Ubah Jadwal Kunci</button>
+
+                                </div>
+                                <div id="ubah_jadwal" class="modal fade" role="dialog">
+                                   <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Ubah Jadwal Kunci</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div>Lab Jaga : </div>
+                                                <div>
+                                                    <select class="form-control" id="sel1">
+                                                        <option>KCV</option>
+                                                        <option>AJK</option>
+                                                        <option>IGS</option>
+                                                        <option>MDL</option>
+                                                        <option>LP2</option>
+                                                        <option>ALPRO</option>
+                                                        <option>MI</option>
+                                                        <option>LP1</option>
+                                                        <option>RPL</option>
+                                                        <option>NCC</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary">Simpan</button>
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
                                 <div id="calendar"></div>
                             </div>
                         </div>
@@ -331,49 +368,60 @@
     <script src='fullcalendar/locale/id.js'></script>
     <!-- <script src='fullcalendar/lib/jquery.min.js'></script> -->
 
+
+
+    <!-- <div  title="Event Details" style="display:none;">
+        Start: <span id="startTime"></span><br>
+        End: <span id="endTime"></span><br><br>
+        <p id="eventInfo"></p>
+        <p><strong><a id="eventLink" href="" target="_blank">Read More</a></strong></p>
+
+    </div> -->
     <script>
         $(document).ready(function() {
             // page is ready
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; //January is 0!
+            var yyyy = today.getFullYear();
+            if(dd<10) {
+                dd='0'+dd
+            } 
+
+            if(mm<10) {
+                mm='0'+mm
+            } 
+            today = yyyy +'-'+ mm+'-'+dd;
             $('#calendar').fullCalendar({
                     locale: 'id',
                     // enable theme
                     theme: true,
                     // emphasizes business hours
                     businessHours: true,
-                    // event dragging & resizing
-                    editable: true,
+                    eventLimit: true, // allow "more" link when too many events
                     // header
                     header: {
                       left: 'prev,next today',
-                      center: 'title',
-                      right: 'month,agendaWeek,agendaDay'
+                      center: 'title'
                     },
+                   
                     events: [
                           // all day event
                           {
-                            title  : 'Syukuran KCV',
-                            start  : '2017-5-12'
-                          },
-                          {
-                            title  : 'Pemadaman Listrik',
-                            start  : '2017-5-12'
-                          },
-                          // long-term event 
-                          {
-                            title  : 'Syukuran AJK',
-                            start  : '2017-5-23'
-                          },
-                          // short term event 
-                          {
-                            title  : 'TCODE LP1',
-                            start  : '2017-5-14T11:30:00',
-                            end  : '2017-5-14T012:30:00',
-                            allDay : false // will make the time show
+                            title  : 'KCV',
+                            start  : today
                           }
+
                     ]
+                        
             })
+             // $('#am').on('shown.bs.modal', function () {
+             //           $("#calendar").fullCalendar('render');
+             //        });
         });
     </script>
+   
+                                            
 </body>
 
 </html>
