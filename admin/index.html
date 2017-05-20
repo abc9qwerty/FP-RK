@@ -372,30 +372,53 @@
                             </div>
                             <div class="panel-body">
                                 <div class="row">
-                                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#ubah_jadwal">Tambah Aktivitas Lab</button>
+                                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#tambah_aktivitas">Tambah Aktivitas Lab</button>
                                 </div>
-                                <div id="ubah_jadwal" class="modal fade" role="dialog">
+                                <div id="tambah_aktivitas" class="modal fade" role="dialog">
                                    <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Ubah Jadwal Kunci</h4>
+                                                <h4 class="modal-title">Tambah Aktivitas Lab</h4>
                                             </div>
                                             <div class="modal-body">
-                                                <div>Lab Jaga : </div>
-                                                <div>
-                                                    <select class="form-control" id="sel1">
-                                                        <option>KCV</option>
-                                                        <option>AJK</option>
-                                                        <option>IGS</option>
-                                                        <option>MDL</option>
-                                                        <option>LP2</option>
-                                                        <option>ALPRO</option>
-                                                        <option>MI</option>
-                                                        <option>LP1</option>
-                                                        <option>RPL</option>
-                                                        <option>NCC</option>
-                                                    </select>
+                                                <div class="form-group">
+                                                    <label for="disabledSelect">Nama</label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="disabledSelect">Deskripsi</label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="disabledSelect">Tanggal</label>
+                                                    <input class="form-control" type="date">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="disabledSelect">Jam Mulai</label>
+                                                    <input class="form-control" type="time">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="disabledSelect">Jam Selesai</label>
+                                                    <input class="form-control" type="time">
+                                                </div>
+                                                <!-- <div class="col-lg-4"></div> -->
+                                                <div class="form-group">
+                                                    <label for="disabledSelect">Lab</label>
+                                                    <div>
+                                                        <select class="form-control" id="sel1">
+                                                            <option>KCV</option>
+                                                            <option>AJK</option>
+                                                            <option>IGS</option>
+                                                            <option>MDL</option>
+                                                            <option>LP2</option>
+                                                            <option>ALPRO</option>
+                                                            <option>MI</option>
+                                                            <option>LP1</option>
+                                                            <option>RPL</option>
+                                                            <option>NCC</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
