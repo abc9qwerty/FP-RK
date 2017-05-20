@@ -23,10 +23,6 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-     <!-- Kalendar -->
-     <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
-     <link rel='stylesheet' href='fullcalendar/lib/cupertino/jquery-ui.min.css' />
-   
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -156,11 +152,32 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
+                    <li >
                         <a href="index.html"><i class="fa fa-fw fa-home"></i> Dashboard</a>
                     </li>
+                    <!-- <li>
+                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                    </li>
                     <li>
-                        <a href="lihat_pengumuman.html"><i class="fa fa-fw fa-bullhorn"></i> Pengumuman</a>
+                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                    </li> 
+                    <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    </li>-->
+                    <li>
+                        <a href="pengumuman.html"><i class="fa fa-fw fa-bullhorn"></i> Pengumuman</a>
                     </li>
                     <li>
                         <a href="kunci_parkir.html"><i class="fa fa-fw fa-key"></i> Kunci Parkir</a>
@@ -172,6 +189,7 @@
                                 <a href="#">LP1</a>
                             </li>
                             <li>
+          
                                 <a href="#">RPL</a>
                             </li>
                             <li>
@@ -200,41 +218,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-user"></i> Admin Lab <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo2" class="collapse">
-                            <li>
-                                <a href="#">Lihat Data</a>
-                            </li>
-                            <li>
-                                <a href="#">Tambah Data</a>
-                            </li>
-                            <li>
-                                <a href="#">Ubah Data</a>
-                            </li>
-                            <li>
-                                <a href="#">Hapus Data</a>
-                            </li>
-                        </ul>
+                    <li class="active">
+                        <a href="admin_lab.html"><i class="fa fa-user"></i> Admin Lab</a>
                     </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo3"><i class="fa fa-user"></i> Anggota Lab <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo3" class="collapse">
-                            <li>
-                                <a href="anggota_lab.html">Lihat Data</a>
-                            </li>
-                            <li>
-                                <a href="#">Tambah Data</a>
-                            </li>
-                            <li>
-                                <a href="#">Ubah Data</a>
-                            </li>
-                            <li>
-                                <a href="#">Hapus Data</a>
-                            </li>
-                        </ul>
+                    <li >
+                        <a  href="anggota_lab.html"><i class="fa fa-user"></i> Anggota Lab</a>
                     </li>
-                    <li>
+                    <li >
                         <a href="saran.html"><i class="fa fa-fw fa-file"></i> Saran</a>
                     </li>
                     
@@ -251,7 +241,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Dashboard <!-- <small>Statistics Overview</small> -->
+                            Admin LAB <!-- <small>Statistics Overview</small> -->
                         </h1>
                         <!-- <ol class="breadcrumb">
                             <li class="active">
@@ -271,8 +261,301 @@
                     </div>
                 </div> -->
                 <!-- /.row -->
+                    <div class="col-lg-1">
+                    </div>
 
-                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nama</th>
+                                        <th>NRP</th>
+                                        <th>Alamat Surabaya</th>
+                                        <th>No hp/line/WA</th>
+                                        <th>LAB</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Muhammad Hanif Amrizal</td>
+                                        <td>5114100077</td>
+                                        <td>Keputih</td>
+                                        <td>12345780</td>
+                                        <td>LP1</td>
+                                        <td><a href="edit_admin_lab.html"><button type="submit" class="btn btn-default">Edit</button></a></td>
+                                        <td><button type="Delete" class="btn btn-default">Delete</button></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Jeffry Nasri F</td>
+                                        <td>5114100043</td>
+                                        <td>Blok U</td>
+                                        <td>asdasdasd</td>
+                                        <td>LP1</td>
+                                        <td><a href="edit_admin_lab.html"><button type="submit" class="btn btn-default">Edit</button></a></td>
+                                        <td><button type="Delete" class="btn btn-default">Delete</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alek Nur Fatman</td>
+                                        <td>5114100018</td>
+                                        <td>Keputih</td>
+                                        <td>0754321</td>
+                                        <td>LP1</td>
+                                        <td><a href="edit_admin_lab.html"><button type="submit" class="btn btn-default">Edit</button></a></td>
+                                        <td><button type="Delete" class="btn btn-default">Delete</button></td>
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="row">
+                <form>
+                     <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>Nama</label>
+                            <input class="form-control">
+                            </div>
+
+                        <div class="form-group">
+                            <label>NRP</label>
+                            <input class="form-control">
+                        </div>
+
+                        <div >
+                            <button type="submit" class="btn btn-default">Submit Button</button>
+                            <button type="reset" class="btn btn-default">Reset Button</button>
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+                    
+                    <div class="col-lg-8">
+                        <div class="form-group">
+                                <label>Kotak saran</label>
+                                <textarea class="form-control" rows="8"></textarea>
+                            </div>
+                    </div>
+                </form-->
+                   
+                    <!--div class="col-lg-6">
+
+                        <form role="form">
+
+                            <div class="form-group">
+                                <label>Text Input</label>
+                                <input class="form-control">
+                                <p class="help-block">Example block-level help text here.</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Text Input with Placeholder</label>
+                                <input class="form-control" placeholder="Enter text">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Static Control</label>
+                                <p class="form-control-static">email@example.com</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label>File input</label>
+                                <input type="file">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Text area</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Checkboxes</label>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Checkbox 1
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Checkbox 2
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">Checkbox 3
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Inline Checkboxes</label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">1
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">2
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">3
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Radio Buttons</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio 1
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Inline Radio Buttons</label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>1
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Selects</label>
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Multiple Selects</label>
+                                <select multiple class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-default">Submit Button</button>
+                            <button type="reset" class="btn btn-default">Reset Button</button>
+
+                        </form>
+
+                    </div-->
+                    <!--div class="col-lg-6">
+                        <h1>Disabled Form States</h1>
+
+                        <form role="form">
+
+                            <fieldset disabled>
+
+                                <div class="form-group">
+                                    <label for="disabledSelect">Disabled input</label>
+                                    <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="disabledSelect">Disabled select menu</label>
+                                    <select id="disabledSelect" class="form-control">
+                                        <option>Disabled select</option>
+                                    </select>
+                                </div>
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">Disabled Checkbox
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Disabled Button</button>
+
+                            </fieldset>
+
+                        </form>
+
+                        <h1>Form Validation</h1>
+
+                        <form role="form">
+
+                            <div class="form-group has-success">
+                                <label class="control-label" for="inputSuccess">Input with success</label>
+                                <input type="text" class="form-control" id="inputSuccess">
+                            </div>
+
+                            <div class="form-group has-warning">
+                                <label class="control-label" for="inputWarning">Input with warning</label>
+                                <input type="text" class="form-control" id="inputWarning">
+                            </div>
+
+                            <div class="form-group has-error">
+                                <label class="control-label" for="inputError">Input with error</label>
+                                <input type="text" class="form-control" id="inputError">
+                            </div>
+
+                        </form>
+
+                        <h1>Input Groups</h1>
+
+                        <form role="form">
+
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">@</span>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+
+                            <div class="form-group input-group">
+                                <input type="text" class="form-control">
+                                <span class="input-group-addon">.00</span>
+                            </div>
+
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-eur"></i></span>
+                                <input type="text" class="form-control" placeholder="Font Awesome Icon">
+                            </div>
+
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control">
+                                <span class="input-group-addon">.00</span>
+                            </div>
+
+                            <div class="form-group input-group">
+                                <input type="text" class="form-control">
+                                <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+                            </div>
+
+                        </form>
+
+                        <p>For complete documentation, please visit <a href="http://getbootstrap.com/css/#forms">Bootstrap's Form Documentation</a>.</p>
+
+                    </div-->
+                </div>
+
+                <!--div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
@@ -361,82 +644,24 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- /.row -->
 
-                <div class="row">
+                <!--div class="row">
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-calendar fa-fw"></i> Kalender Aktivitas</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Kalender Aktivitas</h3>
                             </div>
                             <div class="panel-body">
-                                <div class="row">
-                                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#tambah_aktivitas">Tambah Aktivitas Lab</button>
-                                </div>
-                                <div id="tambah_aktivitas" class="modal fade" role="dialog">
-                                   <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Tambah Aktivitas Lab</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="form-group">
-                                                    <label for="disabledSelect">Nama</label>
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="disabledSelect">Deskripsi</label>
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="disabledSelect">Tanggal</label>
-                                                    <input class="form-control" type="date">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="disabledSelect">Jam Mulai</label>
-                                                    <input class="form-control" type="time">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="disabledSelect">Jam Selesai</label>
-                                                    <input class="form-control" type="time">
-                                                </div>
-                                                <!-- <div class="col-lg-4"></div> -->
-                                                <div class="form-group">
-                                                    <label for="disabledSelect">Lab</label>
-                                                    <div>
-                                                        <select class="form-control" id="sel1">
-                                                            <option>KCV</option>
-                                                            <option>AJK</option>
-                                                            <option>IGS</option>
-                                                            <option>MDL</option>
-                                                            <option>LP2</option>
-                                                            <option>ALPRO</option>
-                                                            <option>MI</option>
-                                                            <option>LP1</option>
-                                                            <option>RPL</option>
-                                                            <option>NCC</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary">Simpan</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div id="calendar"></div>
+                                <div id="morris-area-chart"></div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- /.row -->
 
-                <!-- <div class="row">
+                <!--div class="row">
                     <div class="col-lg-4">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -570,7 +795,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div-->
                 <!-- /.row -->
 
             </div>
@@ -593,99 +818,6 @@
     <script src="js/plugins/morris/morris.min.js"></script>
     <script src="js/plugins/morris/morris-data.js"></script>
 
-     <!-- Kalender -->
-     <script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
-    <script src='fullcalendar/lib/moment.min.js'></script>
-    <script src='fullcalendar/fullcalendar.min.js'></script>
-    <script src='fullcalendar/locale/id.js'></script>
-    <!-- <script src='fullcalendar/lib/jquery.min.js'></script> -->
-
-    <script>
-        $(document).ready(function() {
-            // page is ready
-            $('#calendar').fullCalendar({
-                    locale: 'id',
-                    // enable theme
-                    theme: true,
-                    // emphasizes business hours
-                    businessHours: true,
-                    // event dragging & resizing
-                    editable: true,
-                    eventLimit: true, // allow "more" link when too many events
-                    // header
-                    header: {
-                      left: 'prev,next today',
-                      center: 'title',
-                      right: 'month,agendaWeek,agendaDay'
-                    },
-                    events: [
-                          // all\ day event
-                          {
-                            title  : 'Syukuran KCV',
-                            start  : '2017-05-12'
-                          },
-                          {
-                            title  : 'Pemadaman Listrik',
-                            start  : '2017-05-12'
-                          },
-                          // long-term event 
-                          {
-                            title  : 'Syukuran AJK',
-                            start  : '2017-05-23'
-                          },
-                          // short term event 
-                          {
-                            title  : 'TCODE LP1',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'TCODE LP1',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'GameDev LP2',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Sekjar AJK',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Mobile Training MDL',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Database Training MI',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Jarkom Asistensi NCC',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Syukuran RPL',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          }
-                    ]
-            })
-        });
-    </script>
 </body>
 
 </html>
