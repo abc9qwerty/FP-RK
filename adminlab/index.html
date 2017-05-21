@@ -94,7 +94,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Dashboard <!-- <small>Statistics Overview</small> -->
+                            Dashboard - AJK <!-- <small>Statistics Overview</small> -->
                         </h1>
                         <!-- <ol class="breadcrumb">
                             <li class="active">
@@ -140,28 +140,6 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-green">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-user fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">12</div>
-                                        <div>Admin Lab</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="admin_lab.html">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Selengkapnya...</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-yellow">
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
@@ -248,20 +226,7 @@
                                                 <!-- <div class="col-lg-4"></div> -->
                                                 <div class="form-group">
                                                     <label for="disabledSelect">Lab</label>
-                                                    <div>
-                                                        <select class="form-control" id="sel1">
-                                                            <option>KCV</option>
-                                                            <option>AJK</option>
-                                                            <option>IGS</option>
-                                                            <option>MDL</option>
-                                                            <option>LP2</option>
-                                                            <option>ALPRO</option>
-                                                            <option>MI</option>
-                                                            <option>LP1</option>
-                                                            <option>RPL</option>
-                                                            <option>NCC</option>
-                                                        </select>
-                                                    </div>
+                                                    <input class="form-control" type="text" placeholder="AJK" disabled>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
@@ -464,66 +429,13 @@
                     events: [
                           // all\ day event
                           {
-                            title  : 'Syukuran KCV',
-                            start  : '2017-05-12'
-                          },
-                          {
-                            title  : 'Pemadaman Listrik',
+                            title  : 'Maintenance',
                             start  : '2017-05-12'
                           },
                           // long-term event 
                           {
                             title  : 'Syukuran AJK',
                             start  : '2017-05-23'
-                          },
-                          // short term event 
-                          {
-                            title  : 'TCODE LP1',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'TCODE LP1',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'GameDev LP2',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Sekjar AJK',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Mobile Training MDL',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Database Training MI',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Jarkom Asistensi NCC',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
-                          },
-                          {
-                            title  : 'Syukuran RPL',
-                            start  : '2017-05-14T11:30:00',
-                            end  : '2017-05-14T012:30:00',
-                            allDay : false // will make the time show
                           }
                     ]
             })
