@@ -52,7 +52,7 @@
             <ul class="nav navbar-right top-nav">
                 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Admin Lab<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Admin <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li class="divider"></li>
                         <li>
@@ -69,6 +69,12 @@
                     </li>
                     <li class="active">
                         <a href="lihat_pengumuman.html"><i class="fa fa-fw fa-bullhorn"></i> Pengumuman</a>
+                    </li>
+                    <li>
+                        <a href="kunci_parkir.html"><i class="fa fa-fw fa-key"></i> Kunci Parkir</a>
+                    </li>
+                    <li>
+                        <a href="admin_lab.html"><i class="fa fa-fw fa-user"></i> Admin Lab</a>
                     </li>
                     <li>
                         <a href="anggota_lab.html"><i class="fa fa-fw fa-user"></i> Anggota Lab</a>
@@ -99,28 +105,29 @@
                         </ol> -->
                     </div>
                 </div>
-                <div id="some-content" class="box box-shadow grid_13 clearfix">
-                    <div class="alpha omega">
-                        <!-- judul halaman + gambar-->
-                        <!-- judul halaman + gambar-->
-                            <table align="left" style="margin: 1em;">
-                                <tr><td style="width: 150px;">Judul Pengumuman</td><td style="width: 20px;">:</td><td><input type="text" name="judul" size="74" value=""/></td></tr>
-                                <tr><td>Isi Pengumuman</td><td>:</td><td></td></tr>
-                                <tr><td colspan="3">
-                                        <textarea class="ckeditor" cols="100" id="editor1" name="isi" rows="10"></textarea>
-                                    </td></tr>
-                            <tr><td colspan="3"></td></tr>
-                                <tr><td colspan="3">File Pendukung(optional) :
-                                        <input type="hidden" name="jumlah_file" id="jumlah_file" value="1"/>
-                                    </td>
-                                </tr>
-                                <tr id="file_area_1"><td colspan="10">
-                                        <input type='file' name="file_1" id="file_1" size="100"/></td></tr>
-                                <tr><td colspan="3" align="right"><input type="submit" value="Simpan" style="width: 150px"/></td>
-                            </table>
-                        </form>
-                    </div>
-                    <br/>
+                <div class="row">
+                <form>
+                     <div class="col-lg-12">
+                        <div class="form-group">
+                            <label>Judul Pengumuman</label>
+                            <input class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Isi Pengumuman</label>
+                            <textarea class="form-control" rows="10"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>File Pendukung(optional)</label>
+                            <input class="form-control" type="hidden" name="jumlah_file" id="jumlah_file" value="1"/>
+                            <input class="form-group" type='file' name="file_1" id="file_1" size="100"/>
+                        </div>    
+                        <div >
+                            <button type="submit" class="btn btn-default">Simpan</button>
+                            <button type="reset" class="btn btn-default">Batal</button>
+                        </div>
+                </form>
                 </div>
 
             </div>
